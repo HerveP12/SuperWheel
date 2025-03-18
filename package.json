@@ -8,6 +8,7 @@
     "starter"
   ],
   "main": "src/index.tsx",
+  "homepage": "https://hervep12.github.io/SuperWheel", 
   "dependencies": {
     "loader-utils": "3.2.1",
     "react": "18.2.0",
@@ -18,13 +19,18 @@
   "devDependencies": {
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.15",
-    "typescript": "4.4.4"
+    "typescript": "4.4.4",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    // ADD THESE:
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
